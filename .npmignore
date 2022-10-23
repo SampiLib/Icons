@@ -1,0 +1,6 @@
+.*/
+test/
+src/
+dist/*.map
+tsconfig.json
+README_Dev.md

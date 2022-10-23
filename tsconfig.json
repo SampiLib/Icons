@@ -1,0 +1,27 @@
+{
+    "include": [
+        "./src/**/*.ts"
+    ],
+    "exclude": [
+        "lib",
+        "node_modules",
+    ],
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "ES2022"
+        ],
+        "module": "commonjs",
+        "target": "ES2022",
+        "rootDir": "./src",
+        "outDir": "dist/ts",
+        "strict": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "moduleResolution": "Node16",
+        "removeComments": true
+    }
+}

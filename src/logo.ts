@@ -1,4 +1,4 @@
-import { icons } from "./common";
+import { icons } from "./shared";
 
 /**Generates drag indicator symbol
  * @returns {SVGElement} */
