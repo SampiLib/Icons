@@ -1,6 +1,4 @@
-.*/
-test/
-src/
-dist/*.map
-tsconfig.json
-README_Dev.md
+*
+!dist/*
+!README.me
+!package.json
