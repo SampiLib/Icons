@@ -1,0 +1,9 @@
+{
+    "jest.autoRun": {
+        "watch": false,
+        "onSave": "test-only",
+        "onStartup": [
+            "all-tests"
+        ],
+    },
+}
