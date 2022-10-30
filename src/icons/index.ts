@@ -1,11 +1,5 @@
-export * from "./action"
-export * from "./alert"
-export * from "./content"
-export * from "./device"
-export * from "./editor"
-export * from "./image"
-export * from "./logo"
-export * from "./navigation"
-export * from "./search"
-export * from "./social"
-export * from "./toggle"
+import * as material from "./material"
+
+export {
+    material
+}

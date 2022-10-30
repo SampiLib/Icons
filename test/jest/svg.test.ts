@@ -3,16 +3,16 @@ import * as svg from "../../src/index";
 
 describe('Action', function () {
     it('drag_indicator', function () {
-        let icon = svg.drag_indicator()
+        let icon = svg.material.action.drag_indicator.rounded()
         expect(icon).toBeInstanceOf(SVGElement);
-        expect(icon.classList.contains('icon')).toBeTruthy();
-        expect(icon.getAttribute('type')).toEqual('drag_indicator');
+        expect(icon.getAttribute('icon')).toEqual('drag_indicator');
+        expect(icon.getAttribute('type')).toEqual('rounded');
     });
-    it('hourglass_disabled', function () {
-        let icon = svg.hourglass_disabled()
+    it('accessible', function () {
+        let icon = svg.material.action.accessible.filled()
         expect(icon).toBeInstanceOf(SVGElement);
-        expect(icon.classList.contains('icon')).toBeTruthy();
-        expect(icon.getAttribute('type')).toEqual('hourglass_disabled');
+        expect(icon.getAttribute('icon')).toEqual('accessible');
+        expect(icon.getAttribute('type')).toEqual('filled');
     });
 
 });
