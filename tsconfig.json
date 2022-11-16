@@ -1,28 +1,42 @@
 {
+    "files": [
+        "./src/index.ts"
+    ],
     "include": [
         "./src/**/*.ts"
     ],
-    "exclude": [
-        "lib",
-        "node_modules",
-    ],
     "compilerOptions": {
         "lib": [
-            "dom",
-            "ES2022"
+            "ES6",
+            "DOM"
         ],
-        "module": "commonjs",
-        "target": "ES2022",
-        "rootDir": "./src",
-        "outDir": "dist/ts",
         "strict": true,
-        "sourceMap": true,
-        "esModuleInterop": true,
-        "skipLibCheck": true,
         "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "ES2022",
+        "allowJs": true,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "./dist/esm/",
         "declaration": true,
-        "moduleResolution": "Node16",
-        "removeComments": true,
-        "allowSyntheticDefaultImports": true
+        "declarationDir": "./dist/typings/",
+        "esModuleInterop": true
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "lib": [
+                "ES6"
+            ],
+            "strict": true,
+            "forceConsistentCasingInFileNames": true,
+            "noImplicitAny": true,
+            "module": "CommonJS",
+            "target": "ES2022",
+            "allowJs": true,
+            "moduleResolution": "node",
+            "sourceMap": true,
+            "esModuleInterop": true
+        },
     }
 }
