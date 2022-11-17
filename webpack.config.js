@@ -34,6 +34,11 @@ module.exports = [{
     optimization: {
         runtimeChunk: 'single',
     },
+    performance: {
+        hints: false,
+        maxAssetSize: 9999999,
+        maxEntrypointSize: 9999999,
+    }
 }, {
     name: 'build',
     mode: 'production',
@@ -45,4 +50,9 @@ module.exports = [{
         libraryTarget: "umd",
         globalObject: "this"
     },
+    performance: {
+        hints: false,
+        maxAssetSize: 9999999,
+        maxEntrypointSize: 9999999,
+    }
 }];
