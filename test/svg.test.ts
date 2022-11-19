@@ -5,14 +5,12 @@ describe('Action', function () {
     it('drag_indicator', function () {
         let icon = material_action_123_filled()
         expect(icon).toBeInstanceOf(SVGElement);
-        expect(icon.getAttribute('icon')).toEqual('action_123');
-        expect(icon.getAttribute('type')).toEqual('rounded');
+        expect(icon.getAttribute('icon')).toEqual('material_action_123_filled');
     });
     it('accessible', function () {
         let icon = material_action_123_outlined()
         expect(icon).toBeInstanceOf(SVGElement);
-        expect(icon.getAttribute('icon')).toEqual('action_123');
-        expect(icon.getAttribute('type')).toEqual('filled');
+        expect(icon.getAttribute('icon')).toEqual('material_action_123_outlined');
     });
 
 });

@@ -3,7 +3,7 @@ export interface SVGGenerator extends Function {
     path: [string, ...string[]]
 }
 
-export function generateFunction(name: string, path: [string, ...string[]], type: string, icon: string) {
+export function generateFunction(name: string, path: [string, ...string[]], icon: string) {
     let svg: SVGSVGElement | undefined;
     let func = <SVGGenerator>function () {
         if (svg) {
@@ -11,7 +11,6 @@ export function generateFunction(name: string, path: [string, ...string[]], type
         } else {
             svg = <SVGSVGElement>(new DOMParser().parseFromString(icon, 'image/svg+xml')).firstChild;
             svg.setAttribute('icon', name);
-            svg.setAttribute('type', type);
             return <SVGSVGElement>svg.cloneNode(true);
         }
     };

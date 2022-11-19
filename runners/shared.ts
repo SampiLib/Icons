@@ -4,7 +4,7 @@ import { join } from "path"
 export function generateSVG(name: string, path: [string, ...string[]], type: string, fileString: string) {
     return `
 //Generates ${name} icon
-export let ${path.join('_')}_${type} = generateFunction('${name}',${JSON.stringify(path)}, '${type}', '${fileString}');
+export let ${path.join('_')}_${type} = generateFunction('${path.join('_')}_${type}',${JSON.stringify(path)}, '${fileString}');
 `
 }
 
